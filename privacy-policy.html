@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for Nibble, a cozy hamster logic puzzle: what stays on your device, and how Google AdMob advertising data is handled.">
+<meta name="robots" content="index, follow">
+<style>
+  :root { color-scheme: light dark; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+</style>
+<title>Nibble Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --ground: #FBF6EC;
+    --surface: #FFFDF7;
+    --ink: #2B2419;
+    --muted: #6F6353;
+    --accent: #4C7A45;
+    --accent-soft: #EAF0E2;
+    --rule: #E6DCC8;
+    --shadow: 0 1px 2px rgba(43, 36, 25, .05), 0 8px 24px -18px rgba(43, 36, 25, .35);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #14120D;
+      --surface: #1D1A14;
+      --ink: #EDE4D3;
+      --muted: #A2957F;
+      --accent: #93C081;
+      --accent-soft: #23291D;
+      --rule: #332D23;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -18px rgba(0, 0, 0, .9);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #14120D;
+    --surface: #1D1A14;
+    --ink: #EDE4D3;
+    --muted: #A2957F;
+    --accent: #93C081;
+    --accent-soft: #23291D;
+    --rule: #332D23;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -18px rgba(0, 0, 0, .9);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Karla", ui-sans-serif, system-ui, sans-serif;
+    font-size: 16.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 5vw, 3rem) 5rem;
+  }
+
+  /* ---- masthead ---- */
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .eyebrow {
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(2.3rem, 6vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .standfirst {
+    max-width: 60ch;
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  .dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1.75rem;
+    font-size: .8rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    margin-top: .35rem;
+  }
+
+  .dates b {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* ---- at a glance ---- */
+  .glance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2.25rem 0 0;
+    box-shadow: var(--shadow);
+  }
+
+  .glance div {
+    background: var(--surface);
+    padding: 1.15rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+  }
+
+  .glance dt {
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .glance dd {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    font-weight: 500;
+  }
+
+  /* ---- body layout ---- */
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    align-items: start;
+  }
+
+  @media (min-width: 900px) {
+    .columns { grid-template-columns: 200px minmax(0, 1fr); gap: 4rem; }
+    nav.toc { position: sticky; top: 2rem; }
+  }
+
+  nav.toc h2 {
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 .75rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+    font-size: .88rem;
+  }
+
+  nav.toc a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  nav.toc a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  main { display: flex; flex-direction: column; gap: 2.75rem; }
+
+  section { scroll-margin-top: 2rem; }
+
+  h2.rule {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 .9rem;
+    padding-bottom: .55rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-family: "Karla", sans-serif;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 1.6rem 0 .5rem;
+  }
+
+  p, li { max-width: 66ch; }
+  p { margin: 0 0 .9rem; }
+  main ul { margin: 0 0 .9rem; padding-left: 1.1rem; }
+  main li { margin-bottom: .4rem; }
+  main li::marker { color: var(--accent); }
+
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, nav.toc a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .note {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem;
+    border-radius: 0 4px 4px 0;
+    font-size: .95rem;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 .9rem; }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 460px;
+    font-size: .93rem;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: .7rem .9rem .7rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  thead th {
+    font-size: .7rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    border-bottom-color: var(--ink);
+  }
+
+  td:first-child { font-weight: 500; white-space: nowrap; padding-right: 1.5rem; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: .85rem;
+    color: var(--muted);
+  }
+
+  footer p { max-width: 66ch; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <span class="eyebrow">Nibble &middot; Hamster Logic Puzzle</span>
+    <h1>Privacy Policy</h1>
+    <p class="standfirst">Nibble is a single-player puzzle game. It has no accounts, no sign-in, and no
+      servers of our own. Your progress lives on your phone. The one thing that leaves your device is
+      advertising data, handled by Google &mdash; and this page explains exactly what that means.</p>
+    <div class="dates">
+      <span><b>Effective:</b> 2 September 2026</span>
+      <span><b>Last updated:</b> 2 September 2026</span>
+      <span><b>Applies to:</b> the Nibble app for Android and iOS</span>
+    </div>
+  </header>
+
+  <dl class="glance">
+    <div>
+      <dt>Accounts</dt>
+      <dd>None. We never ask for your name, email, or a login.</dd>
+    </div>
+    <div>
+      <dt>Your progress</dt>
+      <dd>Stored only on your device, never uploaded.</dd>
+    </div>
+    <div>
+      <dt>Ads</dt>
+      <dd>Google AdMob, personalised where you allow it.</dd>
+    </div>
+  </dl>
+
+  <div class="columns">
+
+    <nav class="toc" aria-label="Sections">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#device">What stays on your device</a></li>
+        <li><a href="#ads">Advertising</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#consent">Europe, UK &amp; Switzerland</a></li>
+        <li><a href="#us">United States</a></li>
+        <li><a href="#legal">Why we may use it</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#retention">How long data is kept</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+
+      <section id="who">
+        <h2 class="rule">Who we are</h2>
+        <p>Nibble is developed and published by Mazen Bougandoura
+          (&ldquo;we&rdquo;, &ldquo;us&rdquo;), the data controller for the personal data described
+          here. You can reach us at <a href="mailto:bmazen85@gmail.com">bmazen85@gmail.com</a>.</p>
+        <p>This policy covers the Nibble app. It does not cover the app stores you download from,
+          or any website you reach by tapping an advert.</p>
+      </section>
+
+      <section id="device">
+        <h2 class="rule">What stays on your device</h2>
+        <p>Nibble saves your game locally, using your phone&rsquo;s standard app storage. None of it is
+          sent to us or to anyone else, and none of it identifies you:</p>
+        <ul>
+          <li>Which levels you have unlocked and completed, and the stars you earned</li>
+          <li>The level you are currently playing and the marks on its board</li>
+          <li>Your sound and music preferences</li>
+          <li>Counters that space out adverts &mdash; how many levels since the last one, and when it was shown</li>
+        </ul>
+        <p>Deleting the app removes all of it. There is no backup on our side to restore from,
+          so uninstalling means starting the campaign again.</p>
+      </section>
+
+      <section id="ads">
+        <h2 class="rule">Advertising</h2>
+        <p>Nibble is free, and adverts pay for it. We show them between levels, and you can choose to
+          watch one in exchange for a free hint or to skip a level you are stuck on. Adverts never
+          block your progress: declining one always leaves the game fully playable.</p>
+        <p>Adverts are served by <b>Google AdMob</b>. We do not collect or see this data ourselves &mdash;
+          Google and its advertising partners process it to select adverts, measure them, and detect
+          fraud. Depending on your consent, that can include:</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th scope="col">Data</th><th scope="col">What it is used for</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Advertising ID</td>
+                <td>A resettable identifier assigned by your phone, used to tailor and cap adverts. Only used for personalised advertising if you allow it.</td>
+              </tr>
+              <tr>
+                <td>IP address</td>
+                <td>Approximate location (typically city or region) and fraud prevention.</td>
+              </tr>
+              <tr>
+                <td>Device information</td>
+                <td>Model, operating system version, language, screen size &mdash; so the advert fits and works.</td>
+              </tr>
+              <tr>
+                <td>App information</td>
+                <td>That the advert was requested by Nibble, and the app version.</td>
+              </tr>
+              <tr>
+                <td>Advert interactions</td>
+                <td>Whether an advert was shown, viewed, or tapped, and whether a reward was earned.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Personalised adverts</h3>
+        <p>Where you have agreed to it, Google uses your advertising ID and activity across apps and
+          sites to show adverts likely to interest you, rather than random ones. Where you have not
+          agreed, Nibble requests <b>non&#8209;personalised adverts</b> instead: they are chosen from
+          general context rather than a profile of you, though limited data is still processed to
+          deliver the advert and prevent fraud.</p>
+        <p>Google&rsquo;s own handling of this data is described in its
+          <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener">Business Data Responsibility</a>
+          page, and the companies that may receive it are listed under
+          <a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">Google&rsquo;s advertising partners</a>.
+          You can adjust Google&rsquo;s own ad settings at
+          <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">My Ad Center</a>.</p>
+        <h3>On iPhone and iPad</h3>
+        <p>Apple requires a separate permission before an app may use the device&rsquo;s advertising
+          identifier to track you across other companies&rsquo; apps and websites. Nibble shows that
+          system prompt &mdash; <i>App Tracking Transparency</i> &mdash; on first launch, after the consent
+          form described below. Declining changes nothing about the game: you simply see
+          non&#8209;personalised adverts. You can change your answer at any time in
+          <i>Settings &rarr; Privacy &amp; Security &rarr; Tracking</i>.</p>
+        <h3>What you will not see</h3>
+        <p>Nibble is a cozy game, and the adverts in it should not undercut that. We have blocked
+          whole advert categories at the source, including gambling and betting, dating and
+          relationships, and alcohol. Google still decides which advert fills the slot, so we cannot
+          promise perfection &mdash; if something inappropriate appears, tell us and we will block it.</p>
+        <h3>What we do not do</h3>
+        <ul>
+          <li>We never exchange your data for money.</li>
+          <li>We do not read your contacts, photos, files, microphone, camera, or precise GPS location.</li>
+          <li>Nibble asks for no runtime permissions beyond network access to load adverts and to
+            report the anonymous usage described below.</li>
+        </ul>
+      </section>
+
+      <section id="analytics">
+        <h2 class="rule">Analytics</h2>
+        <p>Nibble uses <b>Google Analytics for Firebase</b> to understand how the game is actually
+          played, so that puzzles that are quietly driving people away can be found and fixed. It is
+          switched off until you have answered the consent form described below, and it stays off if
+          you decline.</p>
+        <p>What is reported is about the <i>game</i>, not about you: which level was started, how long
+          it took, how many stars it earned, whether a hint was used, and which level was closed
+          without being finished. It carries a randomly generated app instance identifier, your
+          device model, operating system version, language and country, so we can tell one session
+          apart from another and see where players are. We never attach your name, email address,
+          contacts, or any account to it, and we never try to identify you from it.</p>
+        <p>Because adverts pay for the game, we also receive an estimate of what each advert shown to
+          you earned. This tells us whether the game supports itself. It is an estimate produced by
+          Google, not a payment record, and it is not linked to anything you did outside Nibble.</p>
+        <p>You can find Google&rsquo;s description of this processing in the
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase
+          privacy documentation</a>. Uninstalling the app stops all of it.</p>
+      </section>
+
+      <section id="consent">
+        <h2 class="rule">Europe, the UK &amp; Switzerland</h2>
+        <p>If you are in the European Economic Area, the United Kingdom, or Switzerland, Nibble shows
+          you a consent form the first time you open it, before any advert is requested. The form is
+          served by Google&rsquo;s <b>User Messaging Platform</b>, a Google-certified consent management
+          platform operating under the IAB Transparency &amp; Consent Framework. It is where you choose
+          whether adverts may be personalised and which advertising partners may process your data.</p>
+        <p>Nothing is requested until you have answered. Consent is genuinely optional: if you decline,
+          the game runs exactly the same &mdash; with non&#8209;personalised adverts, or with no adverts at
+          all. No feature, level, or hint is ever withheld because of your answer.</p>
+        <div class="note">
+          <p><b>Changing your mind.</b> You can reset or delete your advertising ID at any time in your
+            phone&rsquo;s settings &mdash; on Android under <i>Settings &rarr; Privacy &rarr; Ads</i>, and on
+            iPhone or iPad by turning off <i>Allow Apps to Request to Track</i> under
+            <i>Settings &rarr; Privacy &amp; Security &rarr; Tracking</i>. Either
+            stops personalised advertising in every app on the device. To revisit the in-app consent form itself,
+            clear Nibble&rsquo;s app data or reinstall the app; it will appear again on next launch. You
+            can also withdraw consent by writing to us at the address below, and we will confirm it.</p>
+        </div>
+      </section>
+
+      <section id="us">
+        <h2 class="rule">United States</h2>
+        <p>If you are in California, Colorado, Connecticut, Virginia, or another US state with a
+          comprehensive privacy law, Nibble shows you a privacy notice on first launch, served by the
+          same User Messaging Platform, with a control to opt out.</p>
+        <p>We want to be straightforward about one point. We do not exchange your data for money, but
+          when adverts are personalised, an identifier from your device is shared with Google and its
+          advertising partners for cross-context behavioural advertising. Under California&rsquo;s CCPA
+          and CPRA, and under similar laws in other states, <b>that sharing counts as a
+          &ldquo;sale&rdquo; or &ldquo;share&rdquo;</b> of personal information &mdash; so we treat it as one and
+          give you the right to stop it.</p>
+        <h3>How to opt out of sale or sharing</h3>
+        <ul>
+          <li>Choose the opt-out shown in Nibble&rsquo;s first-launch privacy notice.</li>
+          <li>On Android, turn on <i>Delete advertising ID</i> in your settings. On iPhone or iPad, turn
+            off <i>Allow Apps to Request to Track</i> under <i>Settings &rarr; Privacy &amp; Security
+            &rarr; Tracking</i>. Either stops personalised advertising in every app on the device.</li>
+          <li>Email <a href="mailto:bmazen85@gmail.com">bmazen85@gmail.com</a> with the subject
+            &ldquo;Do Not Sell or Share&rdquo;, and we will apply it.</li>
+        </ul>
+        <p>The categories involved are identifiers (advertising ID, IP address), internet activity
+          (advert interactions), and coarse location inferred from IP. We do not collect sensitive
+          personal information, and we do not knowingly sell or share the personal information of
+          anyone under 16. We will not treat you differently for opting out.</p>
+      </section>
+
+      <section id="legal">
+        <h2 class="rule">Why we may use it</h2>
+        <p>For players in the EEA and UK, our legal bases under the GDPR are:</p>
+        <ul>
+          <li><b>Consent</b> &mdash; for personalised advertising and the storing of, or access to,
+            information on your device for that purpose. You may withdraw it at any time, as described above.</li>
+          <li><b>Legitimate interests</b> &mdash; for showing non&#8209;personalised adverts, capping how often
+            you see them, and preventing advertising fraud, so that a free game remains sustainable.</li>
+          <li><b>Consent</b> &mdash; for the analytics described above. Nibble does not report anything
+            until you have answered the consent form, and reports nothing at all if you decline.</li>
+        </ul>
+      </section>
+
+      <section id="rights">
+        <h2 class="rule">Your rights</h2>
+        <p>Depending on where you live, you may have the right to access the personal data held about
+          you, correct it, delete it, object to or restrict its processing, withdraw consent, or
+          receive a copy of it. Residents of California and other US states with privacy laws have
+          comparable rights, including the right to opt out of the sale or sharing of personal
+          information &mdash; set out in <a href="#us">United States</a> above &mdash; and the right not to be
+          discriminated against for exercising them.</p>
+        <p>Because Nibble holds nothing about you on any server of ours, the fastest routes are usually
+          direct: delete the app to remove everything stored locally, and use
+          <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Google My Ad Center</a>
+          or your device&rsquo;s advertising settings for advertising data held by Google. We will also
+          help with any request sent to <a href="mailto:bmazen85@gmail.com">bmazen85@gmail.com</a>, and you
+          have the right to complain to your local data protection authority.</p>
+      </section>
+
+      <section id="children">
+        <h2 class="rule">Children</h2>
+        <p>Nibble is a general-audience puzzle game. It is not directed to children under 13 (or the
+          equivalent minimum age where you live), and we do not knowingly collect personal data from
+          them. If you believe a child has provided us with personal data, contact us and we will
+          delete it.</p>
+      </section>
+
+      <section id="retention">
+        <h2 class="rule">How long data is kept</h2>
+        <p>Game data stays on your device until you delete it or uninstall the app. Advertising data is
+          retained by Google under its own retention schedules, described in the
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+          Analytics events are retained by Google for a maximum of 14 months, after which they are
+          deleted automatically. We hold no copy of any of it.</p>
+      </section>
+
+      <section id="security">
+        <h2 class="rule">Security</h2>
+        <p>Game data is stored in your app&rsquo;s private storage, which your operating system keeps
+          separate from other apps. Advert requests travel over encrypted connections. No system is
+          perfectly secure, but because we operate no servers and store nothing about you, there is
+          very little to lose.</p>
+      </section>
+
+      <section id="changes">
+        <h2 class="rule">Changes to this policy</h2>
+        <p>If we change how Nibble handles data &mdash; a new advertising partner, a new feature that
+          collects something &mdash; we will update this page and change the date at the top. Where the
+          change is significant, we will ask for your consent again inside the app before it takes
+          effect.</p>
+      </section>
+
+      <section id="contact">
+        <h2 class="rule">Contact</h2>
+        <p>Questions about this policy, or about your data, go to
+          <a href="mailto:bmazen85@gmail.com">bmazen85@gmail.com</a>. We aim to reply within 30 days.</p>
+        <p>Mazen Bougandoura</p>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>Nibble &mdash; a cozy hamster logic puzzle. This policy is provided for transparency and is not
+      legal advice; if you operate in a regulated market, have a lawyer review it before release.</p>
+  </footer>
+</div>
+</body>
+</html>
